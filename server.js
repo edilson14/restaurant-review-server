@@ -38,4 +38,4 @@ app.post('/review', (req, res) => {
   }, 2000)
 })
 
-app.listen(port, () => console.log(`Restaurant app listening on port ${port}!`))
+app.listen(process.env.PORT || 8080, () => console.log(`Restaurant app listening on port ${port}!`))

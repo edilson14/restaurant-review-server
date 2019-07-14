@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
-const port = 3000
+
+const port = process.env.PORT || config;
+const host = '0.0.0.0';
 
 app.get('/restaurants', (req, res) => {
   res.json([
@@ -37,4 +39,4 @@ app.post('/review', (req, res) => {
   }, 2000)
 })
 
-app.listen(port, () => console.log(`Restaurant app listening on port ${port}!`))
+app.listen(port, host, () => console.log(`Restaurant app listening on port ${port}!`))

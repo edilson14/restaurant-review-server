@@ -1,15 +1,27 @@
 {
-    "name": "server",
-    "version": "1.0.0",
-    "description": "",
-    "main": "server.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server.js"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "express": "^4.16.3"
-    }
+  "name": "restaurat-review-server",
+  "version": "1.0.0",
+  "description": "server para o aplicativo restaurantReview feito em react-native",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "edytavares14",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "engines": {
+    "node": "8.10.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edytavares14/restaurant-review-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edytavares14/restaurant-review-server/issues"
+  },
+  "homepage": "https://github.com/edytavares14/restaurant-review-server#readme"
 }

@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 
 const port = process.env.PORT || config;
-const host = '0.0.0.0';
 
+app.get('/', function (req, res) {
+  res.redirect('/todo');
+});
 app.get('/restaurants', (req, res) => {
   res.json([
     { id: 1, name: 'React Cafe', address: '123 Anywhere St', image: 'circle.png', rating: 5 },
@@ -39,4 +41,4 @@ app.post('/review', (req, res) => {
   }, 2000)
 })
 
-app.listen(port, host, () => console.log(`Restaurant app listening on port ${port}!`))
+app.listen(port, () => console.log(`Restaurant app listening on port ${port}!`))

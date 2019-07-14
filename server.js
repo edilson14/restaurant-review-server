@@ -1,11 +1,8 @@
 const express = require('express')
 const app = express()
 
-const port = process.env.PORT || config;
+const port = process.env.PORT || 8080;
 
-app.get('/', function (req, res) {
-  res.redirect('/todo');
-});
 app.get('/restaurants', (req, res) => {
   res.json([
     { id: 1, name: 'React Cafe', address: '123 Anywhere St', image: 'circle.png', rating: 5 },

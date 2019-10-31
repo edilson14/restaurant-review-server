@@ -1,4 +1,3 @@
 # restaurant-review-server
 
-#Heroku app Link
-https://restaurantreview-server.herokuapp.com/restaurants
+[Live](https://restaurantreview-server.herokuapp.com/restaurants)
